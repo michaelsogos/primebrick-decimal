@@ -10,7 +10,7 @@
   "author": "Michael Sogos",
   "repository": {
     "type": "git",
-    "url": "https://github.com/michaelsogos/primebrick-decimal"
+    "url": "git+https://github.com/michaelsogos/primebrick-decimal.git"
   },
   "homepage": "https://github.com/michaelsogos/primebrick-decimal#readme",
   "bugs": {
