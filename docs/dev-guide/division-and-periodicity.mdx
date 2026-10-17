@@ -1,0 +1,44 @@
+---
+title: Division and periodicity
+description: PostgreSQL-faithful division scale (select_div_scale) and how periodic results are tracked.
+---
+
+# Division and periodicity
+
+## PostgreSQL-faithful scale
+
+`div(a, b)` without an explicit scale uses PostgreSQL's own `select_div_scale`
+rule — `max(16 - 4·qweight, scale_a, scale_b)` where `qweight` is the weight of
+the quotient's integer part. The output is **digit-for-digit identical** to
+`numeric` division on the database:
+
+| PostgreSQL | `div()` result |
+|------------|----------------|
+| `1/3` | `0.33333333333333333333` |
+| `10/4` | `2.5000000000000000` |
+| `100/3` | `33.3333333333333333` |
+
+`pgDivScale(a, b)` exposes the computed scale if you need it for pre-validation.
+
+## Fixed scale override
+
+```ts
+div(total, 8, 2);                               // force scale 2 (HALF_UP)
+div(a, b, { scale: 6, rounding: "HALF_EVEN" }); // force scale + rounding mode
+```
+
+## The `isPeriodic` flag
+
+`isPeriodic(d)` is `true` when the last division produced a non-terminating
+expansion that was truncated (e.g. `1/3`). The flag **propagates through
+operations** — a downstream computation on a periodic operand stays flagged,
+so callers can decide to round for display while keeping the precise value
+internally:
+
+```ts
+const third = div(1, 3);
+isPeriodic(third);              // true
+isPeriodic(mul(third, 2));      // true — propagates
+isPeriodic(add(third, "1"));    // true — propagates
+isPeriodic(div(4, 2));          // false
+```

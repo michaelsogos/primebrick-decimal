@@ -1,0 +1,49 @@
+---
+title: When to use
+description: Use cases where @primebrick/decimal is the right choice — money, quantities, numeric round-trips, deterministic arithmetic.
+---
+
+# When to use
+
+## Use it for
+
+### Money and invoicing
+
+Any amount that must be exact — prices, totals, tax, fees, currency exchange:
+
+```ts
+const line = mul(price, qty);
+const vat = mul(line, "0.22");         // exact — no 0.1-style drift
+const total = add(line, vat);
+```
+
+`0.1 + 0.2 === 0.3` always; display rounding is an explicit choice, not an
+accident of IEEE-754.
+
+### Quantities and measurements
+
+Stock levels, weights, durations expressed in decimal — anything persisted in
+`numeric`/`decimal` columns and compared/summed in TypeScript.
+
+### PostgreSQL `numeric` round-trips
+
+Values read from `numeric` columns hydrate to `Decimal` (via `fromPG`/the
+DAL), compute exactly, and serialize back via `toPG` — digit-identical,
+including the PG-faithful default scale of `div`.
+
+### Cross-layer value transport
+
+When a decimal value travels FE ↔ BE ↔ service ↔ DB, the `"12.34d"` wire
+format keeps it exact end to end (see [Wire format](./wire-format.mdx)).
+
+## Advantages over alternatives
+
+| Requirement | `Number` | `decimal.js` | `@naviary/bigdecimal` | `@primebrick/decimal` |
+|---|---|---|---|---|
+| Base-10 exact (`0.1` = `0.1`) | ❌ | ✅ | ⚠️ binary fixed-point | ✅ |
+| PG `numeric` parity (division scale) | ❌ | ~ | ❌ | ✅ same `select_div_scale` |
+| ALU-speed ops | — | digit-array | ✅ bigint | ✅ scaled bigint |
+| Functional API `add(a, b)` | — | class methods | ✅ | ✅ |
+| Zero deps, browser-safe | ✅ | ✅ | ✅ | ✅ |
+| Self-describing wire format | ❌ | ❌ | ❌ | ✅ `"12.34d"` |
+| Periodic-division tracking | ❌ | ❌ | ❌ | ✅ `isPeriodic` |
