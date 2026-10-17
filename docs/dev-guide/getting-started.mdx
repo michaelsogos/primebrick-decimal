@@ -1,0 +1,57 @@
+---
+title: Getting started
+description: Install @primebrick/decimal and run your first exact decimal computation.
+---
+
+# Getting started
+
+## Install
+
+```bash
+pnpm add @primebrick/decimal
+```
+
+Requires Node.js 24+ (native `bigint` is used throughout — no polyfills).
+
+## First computation
+
+```ts
+import { dec, add, sub, mul, div, toPG } from "@primebrick/decimal";
+
+const a = dec("19.99");          // parse from string — always preferred
+const b = dec("4.50");
+
+const subtotal = add(a, b);       // 24.49
+const total = mul(subtotal, 3);   // 73.47
+const each = div(total, 7);       // 10.49571428571428571 (PG-faithful scale)
+
+toPG(total);                      // "73.47" — ready for a numeric column
+```
+
+## Accepted inputs
+
+All operations accept `DecimalInput` = `Decimal | number | bigint | string`:
+
+```ts
+dec("0.5")    // v=5n, scale=1
+dec(".5")     // → 0.5   (leading dot auto-padded)
+dec("1.5e3")  // → 1500  (exponents supported)
+dec(0.1)      // → 0.1   (number → shortest round-trip string, no float garbage)
+dec(42n)      // → 42    (bigint → scale 0)
+```
+
+Prefer **string** inputs for literals — `dec("0.1")` is the most explicit and
+never touches binary floating point. `dec(0.1)` is still exact (the number is
+serialized through its shortest round-trip representation), but strings make
+the intent obvious.
+
+## Errors
+
+Non-finite values throw immediately:
+
+```ts
+dec("NaN");       // DecimalError — code "NON_FINITE"
+dec(Infinity);    // DecimalError — code "NON_FINITE"
+```
+
+A `Decimal` is always a finite base-10 number by contract.

@@ -1,0 +1,49 @@
+---
+title: Precision model
+description: How @primebrick/decimal represents values — unscaled bigint × 10^-scale, immutability, and exact numeric round-tripping.
+---
+
+# Precision model
+
+## Representation
+
+A `Decimal` is `value = v × 10^(-scale)`:
+
+| Property | Type | Meaning |
+|----------|------|---------|
+| `v` | `bigint` | Unscaled integer (the digits) |
+| `scale` | `number` | How many decimal places (`>= 0`) |
+
+This is the Java `BigDecimal` model — the only representation that round-trips
+PostgreSQL `numeric` exactly, because `numeric` itself is a base-10 scaled
+integer at heart.
+
+```ts
+dec("12.34");   // v = 1234n, scale = 2  →  12.34
+dec("1.5e3");   // v = 15n,  scale = -2  →  1500 (negative scale allowed internally)
+```
+
+## Why not `Number` or digit arrays
+
+- **`Number`** is binary floating point — `0.1` has no exact representation;
+  every arithmetic step accumulates error and can drift on serialization.
+- **Digit-array decimal libraries** (e.g. `decimal.js`) are exact but pay a
+  per-operation digit-manipulation cost.
+- **`bigint` scaled integers** get ALU-speed integer arithmetic (native, no
+  allocation per digit) while staying base-10 exact.
+
+## Immutability
+
+`Decimal` instances are frozen value objects. Every operation returns a NEW
+`Decimal` — there is no mutation API. `strictEq` compares `v` and `scale`
+exactly (so `1.0` ≠ `1`); `eq`/`cmp` compare the mathematical value
+(`1.0` == `1`).
+
+## Limits
+
+- `NUMERIC_MIN_SIG_DIGITS` (= 16) mirrors PostgreSQL's minimum significant
+  digits for `numeric` output scale decisions.
+- Arbitrary magnitude: `v` is an unbounded `bigint` — the limit is memory,
+  not a fixed precision cap.
+- `NaN`/`Infinity` are rejected at the boundary (`NON_FINITE` error) — see
+  [Getting started](./getting-started.mdx#errors).

@@ -1,0 +1,36 @@
+---
+title: Rounding
+description: The 7 rounding modes supported by rescale/setScale/round and explicit-scale division.
+---
+
+# Rounding
+
+`RoundingMode` accepts the classic `BigDecimal` mode names:
+
+| Mode | Behavior |
+|------|----------|
+| `UP` | Away from zero |
+| `DOWN` | Toward zero (truncation) |
+| `CEILING` | Toward +∞ |
+| `FLOOR` | Toward −∞ |
+| `HALF_UP` | Nearest, ties away from zero — **default**, matches PG `round()` |
+| `HALF_DOWN` | Nearest, ties toward zero |
+| `HALF_EVEN` | Nearest, ties to even digit (banker's rounding) |
+
+## Where modes apply
+
+```ts
+round("12.345", 2);                       // 12.35 (HALF_UP default)
+round("12.345", 2, "HALF_EVEN");          // 12.34 (banker's)
+rescale("9.876", 1);                      // 9.9
+setScale("9.876", 3, "DOWN");             // 9.876 — pads or truncates to exactly 3
+div(a, b, { scale: 6, rounding: "FLOOR" });// floor division at scale 6
+```
+
+## Related transforms
+
+- `trunc(d)` — integer part (toward zero)
+- `floor(d)` / `ceil(d)` — integer toward −∞ / +∞
+- `normalize(d)` — strip trailing zeros (`12.3400` → `12.34`; `v`/`scale`
+  minimized). Note: `normalize` changes `scale`, so `strictEq` on a normalized
+  and un-normalized equal value is `false` — use `eq` for value comparison.

@@ -1,0 +1,43 @@
+---
+title: "@primebrick/decimal"
+description: High-performance base-10 decimal arithmetic on native BigInt — exact, deterministic, PostgreSQL numeric-faithful.
+---
+
+# @primebrick/decimal
+
+`@primebrick/decimal` is a shared Primebrick library providing **exact base-10
+decimal arithmetic** on native `bigint`. It is the missing ring between
+JavaScript `Number` (binary floating point — `0.1 + 0.2 !== 0.3`) and SQL
+`decimal`/`numeric` columns.
+
+Every operation is deterministic and PostgreSQL-faithful: `add(0.1, 0.2)`
+returns `0.3`, always. Division follows PostgreSQL's own `select_div_scale`
+rule, so `div(1, 3)` yields the same digits as `numeric` division on the
+database. Zero dependencies, browser-safe.
+
+```ts
+import { dec, add, mul, div, toPG } from "@primebrick/decimal";
+
+const price = dec("19.99");
+const total = mul(add(price, "4.50"), 3);   // 73.47
+const third = div(1, 3);                    // 0.33333333333333333333 — same digits as PG numeric
+```
+
+## When this library is used
+
+Anywhere Primebrick moves money, quantities, or measurements between the
+TypeScript layer and PostgreSQL `numeric` columns — the DAL serializes
+`Decimal` values through `toPG` so stored values are digit-exact.
+
+## Reading guide
+
+- [Getting started](./getting-started.mdx) — install and first computation
+- [Precision model](./precision-model.mdx) — the `bigint × 10^-scale` representation and why it round-trips `numeric` exactly
+- [Division and periodicity](./division-and-periodicity.mdx) — PostgreSQL-faithful division scale and the `isPeriodic` flag
+- [Rounding](./rounding.mdx) — all 7 rounding modes
+- [Wire format](./wire-format.mdx) — JSON-safe serialization (`"12.34d"`), hydration, `toPG`
+- [When to use](./when-to-use.mdx) — use cases and advantages
+- [When NOT to use](./when-not-to-use.mdx) — limitations and alternatives
+- [Examples](./examples.mdx) — recipes
+- [API reference](./api-reference.mdx) — every exported symbol, mechanically rendered from TypeDoc
+- [Contributing](./contributing.mdx) — local development and release flow
