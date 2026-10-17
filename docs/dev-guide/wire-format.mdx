@@ -1,0 +1,37 @@
+---
+title: Wire format
+description: JSON-safe serialization — toWire/toJSON emit self-describing "12.34d" strings, toPG emits plain "12.34" for numeric columns.
+---
+
+# Wire format
+
+A `Decimal` must never serialize as a JSON number — that would hand the value
+to the binary float parser and destroy precision at the boundary. The library
+provides three explicit serializations:
+
+| Function | Output | Use |
+|----------|--------|-----|
+| `toPG(d)` | `"12.34"` (plain string) | PostgreSQL `numeric` parameters — the DAL uses this |
+| `toWire(d)` / `toJSON(d)` | `"12.34d"` (self-describing) | JSON APIs, Ext-JSON — the `d` suffix marks it for rehydration |
+| `toString(d)` | `"12.34"` | display / logs |
+| `toNumber(d)` | `number` — **lossy** | last-resort interop only |
+
+## In JSON
+
+```ts
+JSON.stringify({ total });     // {"total":"73.47d"} — via toJSON
+```
+
+The `d`-suffixed string survives `JSON.parse` untouched and schema-aware
+hydration (e.g. the SDK Ext-JSON middleware or the DAL hydration path) revives
+it into a `Decimal` — precision never crosses a float.
+
+## Hydration
+
+- `fromWire("12.34d")` — parses the self-describing form (accepts plain `"12.34"` too)
+- `fromPG("12.34")` — parses a `numeric` value as returned by PostgreSQL
+- `parseDecimal` / `dec` — general entry point (`DecimalInput`)
+
+`NaN`, `Infinity`, `-Infinity` (legal `numeric` values in PG ≥ 14) cannot be
+represented — `fromPG`/`dec` throw `DecimalError` with `code: "NON_FINITE"`.
+This is deliberate: a `Decimal` is always finite.

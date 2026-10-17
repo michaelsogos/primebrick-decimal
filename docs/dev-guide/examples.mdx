@@ -1,0 +1,65 @@
+---
+title: Examples
+description: Practical recipes — invoice totals, per-unit splits, currency rounding, PG column round-trips.
+---
+
+# Examples
+
+## Invoice line total with VAT
+
+```ts
+import { dec, add, mul, div, round, toPG, isPeriodic } from "@primebrick/decimal";
+
+const unit = dec("19.99");
+const qty = dec(3);
+const line = mul(unit, qty);                // 59.97
+
+const vatRate = dec("0.22");
+const vat = round(mul(line, vatRate), 2);   // 13.19 (HALF_UP)
+const total = add(line, vat);               // 73.16
+```
+
+## Splitting a bill (periodicity-aware)
+
+```ts
+const total = dec("100.00");
+const guests = 3;
+
+const share = div(total, guests);           // 33.3333333333333333 (PG scale)
+isPeriodic(share);                          // true — non-terminating
+
+const shareRounded = round(share, 2);       // 33.33 — for display
+// remainder: total - shareRounded*guests = 0.01 → assign cents explicitly
+const remainder = sub(total, mul(shareRounded, guests)); // 0.01
+```
+
+## Money in/out of PostgreSQL
+
+```ts
+// numeric column → Decimal
+const amount = fromPG(row.amount);          // row.amount: "1234.56"
+
+// Decimal → numeric parameter
+await db.query("UPDATE invoices SET total = $1", [toPG(total)]);
+```
+
+## Comparison
+
+```ts
+cmp("1.0", "1")     // 0  — same value
+eq("1.0", "1")      // true
+strictEq("1.0", "1")// false — different scale
+min("5", "3.9")     // 3.9
+max(price, ZERO)    // clamp to non-negative
+signum(balance)     // -1 | 0 | 1
+```
+
+## Scale control
+
+```ts
+round("2.675", 2)                 // 2.68 — exact, unlike Number(2.675).toFixed(2)
+setScale("5", 2)                  // 5.00 — pad for display
+normalize("5.000")                // 5 — strip zeros
+trunc("9.99")                     // 9
+floor("-1.2")                     // -2
+```
