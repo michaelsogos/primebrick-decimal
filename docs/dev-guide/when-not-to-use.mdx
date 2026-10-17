@@ -1,0 +1,37 @@
+---
+title: When NOT to use
+description: Cases where @primebrick/decimal is the wrong tool — performance-critical floats, non-finite values, irrational math.
+---
+
+# When NOT to use
+
+## Non-finite or special float values
+
+`NaN`, `Infinity`, `-Infinity` are **deliberately unsupported** — construction
+throws `DecimalError` (`NON_FINITE`). If your domain needs them (statistics,
+sensor streams, scientific computing), use `number` or a domain-specific type.
+
+## Transcendental / irrational math
+
+There is no `sqrt`, `log`, `sin`, `exp` — a `Decimal` is always a finite
+rational base-10 number. Irrational results would require an infinite
+expansion. Use `number` (or `Math.*`) for geometry, statistics, physics.
+
+## Hot-loop performance on integers
+
+`bigint` arithmetic is fast but still allocates per operation. For pure
+integer counters, indexes, pagination, bitmasks — `number` (or `bigint`
+directly) is cheaper. `Decimal` pays for exactness you may not need.
+
+## Ratios that must stay rational forever
+
+`div` truncates at a finite scale (PG-faithful default or explicit). If you
+need to *keep* `1/3` as a symbolic rational for later exact arithmetic, you
+need a rational-number library (numerator/denominator pairs) — `isPeriodic`
+only tells you a truncation happened.
+
+## Rule of thumb
+
+- Values that must match `numeric` columns or money semantics → `Decimal`
+- Counts, indexes, flags → `number`/`bigint`
+- Scientific/statistical math → `number` + domain library

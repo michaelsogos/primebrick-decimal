@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "index",
+    "getting-started",
+    "precision-model",
+    "division-and-periodicity",
+    "rounding",
+    "wire-format",
+    "when-to-use",
+    "when-not-to-use",
+    "examples",
+    "api-reference",
+    "contributing"
+  ]
+}

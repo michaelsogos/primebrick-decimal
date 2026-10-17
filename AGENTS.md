@@ -20,6 +20,7 @@ See [docs/gitflow rules](../primebrick-dal-v3/docs/gitflow.md) — this repo fol
 | Build | `pnpm run build` |
 | Type check | `pnpm run typecheck` |
 | Test | `pnpm test` |
+| Dev docs (TypeDoc + render) | `pnpm run extract-docs` |
 
 ## Conventions
 

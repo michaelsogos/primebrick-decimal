@@ -1,0 +1,53 @@
+---
+title: Contributing
+description: Local development, tests, docs generation, and the release flow for @primebrick/decimal.
+---
+
+# Contributing
+
+## Setup
+
+```bash
+pnpm install
+pnpm build        # tsc → dist/ (prebuild also refreshes docs artifacts)
+pnpm test         # vitest — battle-test matrix incl. live-PG golden values
+pnpm typecheck    # tsc --noEmit
+```
+
+## Conventions
+
+- **Functional API only** — `add(a, b)`, never `a.add(b)`. Ops accept
+  `DecimalInput` and return `Decimal`.
+- **Immutability** — `Decimal` instances are frozen value objects.
+- **PG parity** — `div` default scale follows PostgreSQL `select_div_scale`;
+  `HALF_UP` is the default rounding (= PG `round()`).
+- **No runtime dependencies, no Primebrick deps** — this is the leaf of the
+  dependency graph.
+- **Docs** — English; TSDoc on every public function (not the class). The
+  rendered `api-reference.mdx` is regenerated mechanically — never edit it.
+
+## Adding an operation
+
+1. Implement in `src/ops.ts` (or a new `src/` module) — pure bigint math, no
+   `Math.*` on the value.
+2. Export from `src/index.ts`.
+3. Extend the matrix tables in `test/decimal.test.ts` — include negative,
+   zero, scale-mismatched, and boundary cases.
+4. `pnpm build` regenerates `docs/dev-guide/api-reference.mdx` — commit it
+   with the change.
+
+## Docs pipeline
+
+`pnpm extract-docs` runs TypeDoc → `docs/dev-guide/_extracted/api.json`, then
+`scripts/render-api-reference.mjs` → `api-reference.mdx`. `prebuild` runs the
+chain on every build, so artifacts stay fresh — commit them with your diff.
+The institutional site syncs this repo's `docs/dev-guide/` from `main`
+(scheduled `docs-release` workflow in `primebrick-v3-docs`). There is no
+`docs/user-guide/` on purpose — decimal is dev-documentation only and must
+never enter the product KB.
+
+## GitFlow & releases
+
+Work on `feature/*` from `develop`. Releases: `release/X.Y.Z` (minor) or
+`hotfix/X.Y.Z` (patch) → merge to `main` → tag `X.Y.Z` → CI publishes to npm
+via OIDC trusted publishing → merge `main` back to `develop`.
