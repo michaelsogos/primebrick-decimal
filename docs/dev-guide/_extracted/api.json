@@ -25,7 +25,7 @@
 					"fileName": "primebrick-decimal/src/decimal.ts",
 					"line": 22,
 					"character": 12,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L22"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L22"
 				}
 			],
 			"type": {
@@ -88,7 +88,7 @@
 							"fileName": "primebrick-decimal/src/decimal.ts",
 							"line": 26,
 							"character": 11,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L26"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L26"
 						}
 					],
 					"type": {
@@ -125,7 +125,7 @@
 							"fileName": "primebrick-decimal/src/decimal.ts",
 							"line": 28,
 							"character": 11,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L28"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L28"
 						}
 					],
 					"type": {
@@ -154,7 +154,7 @@
 							"fileName": "primebrick-decimal/src/decimal.ts",
 							"line": 30,
 							"character": 11,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L30"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L30"
 						}
 					],
 					"type": {
@@ -173,7 +173,7 @@
 							"fileName": "primebrick-decimal/src/decimal.ts",
 							"line": 33,
 							"character": 2,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L33"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L33"
 						}
 					],
 					"signatures": [
@@ -228,7 +228,7 @@
 									"fileName": "primebrick-decimal/src/decimal.ts",
 									"line": 33,
 									"character": 2,
-									"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L33"
+									"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L33"
 								}
 							],
 							"parameters": [
@@ -287,7 +287,7 @@
 							"fileName": "primebrick-decimal/src/decimal.ts",
 							"line": 44,
 							"character": 2,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L44"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L44"
 						}
 					],
 					"signatures": [
@@ -318,7 +318,7 @@
 									"fileName": "primebrick-decimal/src/decimal.ts",
 									"line": 44,
 									"character": 2,
-									"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L44"
+									"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L44"
 								}
 							],
 							"type": {
@@ -339,7 +339,7 @@
 							"fileName": "primebrick-decimal/src/decimal.ts",
 							"line": 56,
 							"character": 2,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L56"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L56"
 						}
 					],
 					"signatures": [
@@ -386,7 +386,7 @@
 									"fileName": "primebrick-decimal/src/decimal.ts",
 									"line": 56,
 									"character": 2,
-									"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L56"
+									"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L56"
 								}
 							],
 							"type": {
@@ -407,7 +407,7 @@
 							"fileName": "primebrick-decimal/src/decimal.ts",
 							"line": 61,
 							"character": 2,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L61"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L61"
 						}
 					],
 					"signatures": [
@@ -430,7 +430,7 @@
 									"fileName": "primebrick-decimal/src/decimal.ts",
 									"line": 61,
 									"character": 2,
-									"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L61"
+									"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L61"
 								}
 							],
 							"type": {
@@ -470,7 +470,7 @@
 					"fileName": "primebrick-decimal/src/decimal.ts",
 					"line": 24,
 					"character": 13,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L24"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L24"
 				}
 			]
 		},
@@ -485,7 +485,7 @@
 					"fileName": "primebrick-decimal/src/decimal.ts",
 					"line": 69,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L69"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L69"
 				}
 			],
 			"signatures": [
@@ -500,7 +500,7 @@
 							"fileName": "primebrick-decimal/src/decimal.ts",
 							"line": 69,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L69"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L69"
 						}
 					],
 					"parameters": [
@@ -534,7 +534,7 @@
 					"fileName": "primebrick-decimal/src/decimal.ts",
 					"line": 87,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L87"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L87"
 				}
 			],
 			"signatures": [
@@ -637,7 +637,7 @@
 							"fileName": "primebrick-decimal/src/decimal.ts",
 							"line": 87,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L87"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L87"
 						}
 					],
 					"parameters": [
@@ -673,7 +673,7 @@
 					"fileName": "primebrick-decimal/src/decimal.ts",
 					"line": 115,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L115"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L115"
 				}
 			],
 			"signatures": [
@@ -756,7 +756,7 @@
 							"fileName": "primebrick-decimal/src/decimal.ts",
 							"line": 115,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L115"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L115"
 						}
 					],
 					"parameters": [
@@ -828,7 +828,7 @@
 					"fileName": "primebrick-decimal/src/decimal.ts",
 					"line": 132,
 					"character": 13,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L132"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L132"
 				}
 			],
 			"type": {
@@ -978,7 +978,7 @@
 					"fileName": "primebrick-decimal/src/decimal.ts",
 					"line": 134,
 					"character": 13,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L134"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L134"
 				}
 			],
 			"type": {
@@ -1104,7 +1104,7 @@
 					"fileName": "primebrick-decimal/src/decimal.ts",
 					"line": 135,
 					"character": 13,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L135"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L135"
 				}
 			],
 			"type": {
@@ -1228,7 +1228,7 @@
 					"fileName": "primebrick-decimal/src/decimal.ts",
 					"line": 136,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L136"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L136"
 				}
 			],
 			"signatures": [
@@ -1243,7 +1243,7 @@
 							"fileName": "primebrick-decimal/src/decimal.ts",
 							"line": 136,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L136"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L136"
 						}
 					],
 					"parameters": [
@@ -1279,7 +1279,7 @@
 					"fileName": "primebrick-decimal/src/decimal.ts",
 					"line": 139,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L139"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L139"
 				}
 			],
 			"signatures": [
@@ -1294,7 +1294,7 @@
 							"fileName": "primebrick-decimal/src/decimal.ts",
 							"line": 139,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L139"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L139"
 						}
 					],
 					"parameters": [
@@ -1342,7 +1342,7 @@
 					"fileName": "primebrick-decimal/src/decimal.ts",
 					"line": 143,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L143"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L143"
 				}
 			],
 			"signatures": [
@@ -1357,7 +1357,7 @@
 							"fileName": "primebrick-decimal/src/decimal.ts",
 							"line": 143,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L143"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L143"
 						}
 					],
 					"parameters": [
@@ -1398,7 +1398,7 @@
 					"fileName": "primebrick-decimal/src/decimal.ts",
 					"line": 148,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L148"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L148"
 				}
 			],
 			"signatures": [
@@ -1425,7 +1425,7 @@
 							"fileName": "primebrick-decimal/src/decimal.ts",
 							"line": 148,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L148"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L148"
 						}
 					],
 					"parameters": [
@@ -1461,7 +1461,7 @@
 					"fileName": "primebrick-decimal/src/decimal.ts",
 					"line": 153,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L153"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L153"
 				}
 			],
 			"signatures": [
@@ -1492,7 +1492,7 @@
 							"fileName": "primebrick-decimal/src/decimal.ts",
 							"line": 153,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L153"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L153"
 						}
 					],
 					"parameters": [
@@ -1528,7 +1528,7 @@
 					"fileName": "primebrick-decimal/src/decimal.ts",
 					"line": 158,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L158"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L158"
 				}
 			],
 			"signatures": [
@@ -1559,7 +1559,7 @@
 							"fileName": "primebrick-decimal/src/decimal.ts",
 							"line": 158,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/decimal.ts#L158"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/decimal.ts#L158"
 						}
 					],
 					"parameters": [
@@ -1612,7 +1612,7 @@
 							"fileName": "primebrick-decimal/src/errors.ts",
 							"line": 3,
 							"character": 11,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/errors.ts#L3"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/errors.ts#L3"
 						}
 					],
 					"type": {
@@ -1652,7 +1652,7 @@
 							"fileName": "primebrick-decimal/src/errors.ts",
 							"line": 10,
 							"character": 2,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/errors.ts#L10"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/errors.ts#L10"
 						}
 					],
 					"signatures": [
@@ -1667,7 +1667,7 @@
 									"fileName": "primebrick-decimal/src/errors.ts",
 									"line": 10,
 									"character": 2,
-									"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/errors.ts#L10"
+									"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/errors.ts#L10"
 								}
 							],
 							"parameters": [
@@ -1748,7 +1748,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "primebrick-workspace/node_modules/.pnpm/@types+node@24.13.3/node_modules/@types/node/globals.d.ts",
+							"fileName": "primebrick-decimal/node_modules/.pnpm/@types+node@24.13.3/node_modules/@types/node/globals.d.ts",
 							"line": 52,
 							"character": 4
 						}
@@ -1849,7 +1849,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "primebrick-workspace/node_modules/.pnpm/@types+node@24.13.3/node_modules/@types/node/globals.d.ts",
+									"fileName": "primebrick-decimal/node_modules/.pnpm/@types+node@24.13.3/node_modules/@types/node/globals.d.ts",
 									"line": 52,
 									"character": 4
 								}
@@ -1918,7 +1918,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "primebrick-workspace/node_modules/.pnpm/@types+node@24.13.3/node_modules/@types/node/globals.d.ts",
+							"fileName": "primebrick-decimal/node_modules/.pnpm/@types+node@24.13.3/node_modules/@types/node/globals.d.ts",
 							"line": 56,
 							"character": 4
 						}
@@ -1949,7 +1949,7 @@
 							},
 							"sources": [
 								{
-									"fileName": "primebrick-workspace/node_modules/.pnpm/@types+node@24.13.3/node_modules/@types/node/globals.d.ts",
+									"fileName": "primebrick-decimal/node_modules/.pnpm/@types+node@24.13.3/node_modules/@types/node/globals.d.ts",
 									"line": 56,
 									"character": 4
 								}
@@ -2067,7 +2067,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "primebrick-workspace/node_modules/.pnpm/@types+node@24.13.3/node_modules/@types/node/globals.d.ts",
+							"fileName": "primebrick-decimal/node_modules/.pnpm/@types+node@24.13.3/node_modules/@types/node/globals.d.ts",
 							"line": 68,
 							"character": 4
 						}
@@ -2220,7 +2220,7 @@
 					"fileName": "primebrick-decimal/src/errors.ts",
 					"line": 2,
 					"character": 13,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/errors.ts#L2"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/errors.ts#L2"
 				}
 			],
 			"extendedTypes": [
@@ -2247,7 +2247,7 @@
 					"fileName": "primebrick-decimal/src/index.ts",
 					"line": 6,
 					"character": 11,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/index.ts#L6"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/index.ts#L6"
 				}
 			],
 			"target": 110
@@ -2263,7 +2263,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 19,
 					"character": 12,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L19"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L19"
 				}
 			],
 			"type": {
@@ -2345,7 +2345,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 32,
 					"character": 13,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L32"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L32"
 				}
 			],
 			"type": {
@@ -2367,7 +2367,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 34,
 					"character": 13,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L34"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L34"
 				}
 			],
 			"type": {
@@ -2391,7 +2391,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 35,
 					"character": 13,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L35"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L35"
 				}
 			],
 			"type": {
@@ -2415,7 +2415,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 36,
 					"character": 13,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L36"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L36"
 				}
 			],
 			"type": {
@@ -2437,7 +2437,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 92,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L92"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L92"
 				}
 			],
 			"signatures": [
@@ -2500,7 +2500,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 92,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L92"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L92"
 						}
 					],
 					"parameters": [
@@ -2563,7 +2563,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 104,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L104"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L104"
 				}
 			],
 			"signatures": [
@@ -2618,7 +2618,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 104,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L104"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L104"
 						}
 					],
 					"parameters": [
@@ -2656,7 +2656,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 115,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L115"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L115"
 				}
 			],
 			"signatures": [
@@ -2695,7 +2695,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 115,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L115"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L115"
 						}
 					],
 					"parameters": [
@@ -2758,7 +2758,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 119,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L119"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L119"
 				}
 			],
 			"signatures": [
@@ -2781,7 +2781,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 119,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L119"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L119"
 						}
 					],
 					"parameters": [
@@ -2819,7 +2819,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 123,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L123"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L123"
 				}
 			],
 			"signatures": [
@@ -2850,7 +2850,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 123,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L123"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L123"
 						}
 					],
 					"parameters": [
@@ -2888,7 +2888,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 127,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L127"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L127"
 				}
 			],
 			"signatures": [
@@ -2919,7 +2919,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 127,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L127"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L127"
 						}
 					],
 					"parameters": [
@@ -2957,7 +2957,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 133,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L133"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L133"
 				}
 			],
 			"signatures": [
@@ -2972,7 +2972,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 133,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L133"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L133"
 						}
 					],
 					"parameters": [
@@ -3023,7 +3023,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 144,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L144"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L144"
 				}
 			],
 			"signatures": [
@@ -3038,7 +3038,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 144,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L144"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L144"
 						}
 					],
 					"parameters": [
@@ -3089,7 +3089,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 155,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L155"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L155"
 				}
 			],
 			"signatures": [
@@ -3104,7 +3104,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 155,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L155"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L155"
 						}
 					],
 					"parameters": [
@@ -3155,7 +3155,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 161,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L161"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L161"
 				}
 			],
 			"signatures": [
@@ -3170,7 +3170,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 161,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L161"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L161"
 						}
 					],
 					"parameters": [
@@ -3208,7 +3208,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 166,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L166"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L166"
 				}
 			],
 			"signatures": [
@@ -3223,7 +3223,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 166,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L166"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L166"
 						}
 					],
 					"parameters": [
@@ -3261,7 +3261,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 203,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L203"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L203"
 				}
 			],
 			"signatures": [
@@ -3348,7 +3348,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 203,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L203"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L203"
 						}
 					],
 					"parameters": [
@@ -3397,7 +3397,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 223,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L223"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L223"
 				}
 			],
 			"signatures": [
@@ -3488,7 +3488,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 223,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L223"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L223"
 						}
 					],
 					"parameters": [
@@ -3555,7 +3555,7 @@
 															"fileName": "primebrick-decimal/src/ops.ts",
 															"line": 226,
 															"character": 20,
-															"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L226"
+															"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L226"
 														}
 													],
 													"type": {
@@ -3576,7 +3576,7 @@
 															"fileName": "primebrick-decimal/src/ops.ts",
 															"line": 226,
 															"character": 36,
-															"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L226"
+															"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L226"
 														}
 													],
 													"type": {
@@ -3622,7 +3622,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 241,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L241"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L241"
 				}
 			],
 			"signatures": [
@@ -3649,7 +3649,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 241,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L241"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L241"
 						}
 					],
 					"parameters": [
@@ -3700,7 +3700,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 256,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L256"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L256"
 				}
 			],
 			"signatures": [
@@ -3731,7 +3731,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 256,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L256"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L256"
 						}
 					],
 					"parameters": [
@@ -3793,7 +3793,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 266,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L266"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L266"
 				}
 			],
 			"signatures": [
@@ -3832,7 +3832,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 266,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L266"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L266"
 						}
 					],
 					"parameters": [
@@ -3881,7 +3881,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 271,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L271"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L271"
 				}
 			],
 			"signatures": [
@@ -3920,7 +3920,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 271,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L271"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L271"
 						}
 					],
 					"parameters": [
@@ -3969,7 +3969,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 277,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L277"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L277"
 				}
 			],
 			"signatures": [
@@ -3984,7 +3984,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 277,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L277"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L277"
 						}
 					],
 					"parameters": [
@@ -4033,7 +4033,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 282,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L282"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L282"
 				}
 			],
 			"signatures": [
@@ -4048,7 +4048,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 282,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L282"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L282"
 						}
 					],
 					"parameters": [
@@ -4099,7 +4099,7 @@
 					"fileName": "primebrick-decimal/src/ops.ts",
 					"line": 285,
 					"character": 16,
-					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L285"
+					"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L285"
 				}
 			],
 			"signatures": [
@@ -4114,7 +4114,7 @@
 							"fileName": "primebrick-decimal/src/ops.ts",
 							"line": 285,
 							"character": 16,
-							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/33c43505df768e1b1a5501b592095b9b39bad9c2/src/ops.ts#L285"
+							"url": "https://github.com/michaelsogos/primebrick-decimal/blob/551b4b60463fcd9a537dc6f2e1898c546aa9e038/src/ops.ts#L285"
 						}
 					],
 					"parameters": [
@@ -4224,7 +4224,7 @@
 		}
 	],
 	"packageName": "@primebrick/decimal",
-	"packageVersion": "3.0.0",
+	"packageVersion": "3.0.1",
 	"symbolIdMap": {
 		"0": {
 			"packageName": "@primebrick/decimal",

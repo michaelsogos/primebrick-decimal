@@ -1,6 +1,6 @@
 {
   "name": "@primebrick/decimal",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "High-performance base-10 decimal arithmetic on native BigInt — exact, deterministic, PostgreSQL numeric-faithful. The missing ring between JS Number and SQL decimal.",
   "type": "module",
   "license": "MIT",
@@ -46,7 +46,7 @@
     "@types/node": "24.13.3",
     "typedoc": "0.28.20",
     "typescript": "6.0.3",
-    "vite": "8.1.5",
+    "vite": "8.3.4",
     "vitest": "4.1.10"
   }
 }
