@@ -87,10 +87,12 @@ const DEC_RE = /^([+-]?)(\d*)(?:\.(\d*))?(?:[eE]([+-]?\d+))?$/;
 export function parseDecimal(input: string): Decimal {
   const s = input.trim();
   if (/nan|inf/i.test(s)) {
+    // standards-exempt: ext-json — decimal is the leaf package (zero deps); extJson* lives in core which depends on it
     throw new DecimalError("NON_FINITE", `Decimal cannot represent non-finite value: ${JSON.stringify(input)}`);
   }
   const m = DEC_RE.exec(s);
   if (!m || (!m[2] && !m[3])) {
+    // standards-exempt: ext-json — leaf package; extJson* lives in core which depends on it
     throw new DecimalError("INVALID_INPUT", `Not a decimal string: ${JSON.stringify(input)}`);
   }
   const [, sign, int = "", frac = "", expStr] = m;
@@ -105,6 +107,7 @@ export function parseDecimal(input: string): Decimal {
     }
   }
   if (digits === "") {
+    // standards-exempt: ext-json — leaf package; extJson* lives in core which depends on it
     throw new DecimalError("INVALID_INPUT", `Not a decimal string: ${JSON.stringify(input)}`);
   }
   const v = BigInt(digits) * (sign === "-" ? -1n : 1n);
