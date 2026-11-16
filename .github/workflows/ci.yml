@@ -17,8 +17,29 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
+      # Self is checked out at a named path so check-standards can reach
+      # its sibling repos the same way check-standards.yml does.
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          path: primebrick-decimal
+
+      - name: Checkout sdk (check-standards tool)
+        uses: actions/checkout@v4
+        with:
+          repository: michaelsogos/primebrick-v3-sdk
+          ref: develop
+          path: primebrick-v3-sdk
+
+      - name: Checkout core (check-standards hints)
+        uses: actions/checkout@v4
+        with:
+          repository: michaelsogos/primebrick-v3-core
+          ref: main
+          path: primebrick-v3-core
+
+      - name: Setup bun (check-standards)
+        uses: oven-sh/setup-bun@v2
 
       - name: Setup Node.js
         uses: actions/setup-node@v6
@@ -28,18 +49,33 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.9
 
+      # No --frozen-lockfile: the committed lockfile is workspace-era cruft;
+      # a fresh standalone install is deterministic (all deps pinned exact).
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        working-directory: primebrick-decimal
+        run: pnpm install
 
       - name: Build
+        working-directory: primebrick-decimal
         run: pnpm run build
 
       - name: Test
+        working-directory: primebrick-decimal
         run: pnpm run test
 
       - name: Type check
+        working-directory: primebrick-decimal
         run: npx tsc --noEmit
+
+      - name: "Pack (rewrite workspace: protocol)"
+        # pnpm pack emits the published manifest with workspace:* deps
+        # rewritten to their resolved versions — npm publish alone would
+        # ship the literal "workspace:*" spec and fail downstream installs.
+        working-directory: primebrick-decimal
+        run: pnpm pack
 
       - name: Publish to NPM (OIDC Trusted Publishing)
         # No NPM_TOKEN env var — OIDC handles authentication.
@@ -47,4 +83,5 @@ jobs:
         #   https://www.npmjs.com/package/@primebrick/decimal/access
         # Repository: michaelsogos/primebrick-decimal
         # Workflow: .github/workflows/ci.yml
-        run: npm publish --access public --provenance
+        working-directory: primebrick-decimal
+        run: npm publish ./*.tgz --access public --provenance
