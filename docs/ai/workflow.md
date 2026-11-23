@@ -66,6 +66,22 @@ throwaway probe deleted after it passes.
 - Exploratory checks run inside the final spec while it is developed,
   never in scratch files; assertions sharpen as evidence arrives.
 
+## Plan-first — MANDATORY for every governed task
+
+Any request in this workflow's scope (feature, refactor, debt, bugfix)
+runs under an open plan file in `primebrick-workspace/ai-plans/` — the
+plan is the ledger of record and the memory that survives the session.
+
+- **No plan exists → create it in TIC, before any TOC work.** Starting
+  execution without a plan file is a protocol violation.
+- **The turn names its governing plan** — which file and which task rows
+  it executes. Work outside the plan's rows is added to the table first
+  or deferred — never shipped unrecorded.
+- **A deviation from the plan is a STOP** — update the plan to the new
+  shared direction first; silent drift is the violation.
+- **The ledger is updated before the turn ends** — ✅ with commit
+  hashes, ⏳ with what remains.
+
 ## Gitflow gate — every turn that touches a repo
 
 The governed lifecycle in `docs/gitflow.md` is operational, not advisory:
