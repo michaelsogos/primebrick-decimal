@@ -27,6 +27,23 @@ source code is only the proof.
 Skipping this gate is a protocol violation — wrong locale codes, wrong
 icon vocabulary and anatomy drift all trace back to skipped doc reads.
 
+## Doubt protocol — docs first, user second, never guess
+
+Whenever the agent is uncertain — about a requirement, a contract, a
+convention, a vocabulary choice, an expected behavior — at ANY point of
+ANY turn and for ANY judgment call, the resolution order is fixed:
+
+1. **Search the docs.** `AGENTS.md`, `.devin/rules/*`, `docs/ai/*`,
+   `docs/dev-guide/*` in every repo the doubt touches. Most doubts are
+   already settled there.
+2. **If the docs do not answer deterministically, ask the user.** When
+   two readings are both defensible — colors, vocabulary, ordering, UX
+   semantics — the user picks, not the agent. A judgment call resolved
+   silently is a drift vector.
+3. **Guessing is the violation.** The protocol is "search → ask", never
+   "guess and fix later". An unverified assumption that ships costs
+   more than a question asked.
+
 ## Actions
 1. **Analysis Phase**: Analyze the codebase to fully understand the requirements, but **DO NOT modify any source code files** during this phase.
 2. **File Creation**: Automatically generate a new Markdown plan file inside the directory `d:\git\primebrick\primebrick-workspace\ai-plans\`. You are free to decide the file name based on the task context (e.g., `feature-xyz-plan.md` or `bugfix-abc-plan.md`). Ensure the file uses the `.md` extension. When in plan mode please use sub-agents to create the plan file.
@@ -48,3 +65,31 @@ throwaway probe deleted after it passes.
   exists.
 - Exploratory checks run inside the final spec while it is developed,
   never in scratch files; assertions sharpen as evidence arrives.
+
+## Plan-first — MANDATORY for every governed task
+
+Any request in this workflow's scope (feature, refactor, debt, bugfix)
+runs under an open plan file in `primebrick-workspace/ai-plans/` — the
+plan is the ledger of record and the memory that survives the session.
+
+- **No plan exists → create it in TIC, before any TOC work.** Starting
+  execution without a plan file is a protocol violation.
+- **The turn names its governing plan** — which file and which task rows
+  it executes. Work outside the plan's rows is added to the table first
+  or deferred — never shipped unrecorded.
+- **A deviation from the plan is a STOP** — update the plan to the new
+  shared direction first; silent drift is the violation.
+- **The ledger is updated before the turn ends** — ✅ with commit
+  hashes, ⏳ with what remains.
+
+## Gitflow gate — every turn that touches a repo
+
+The governed lifecycle in `docs/gitflow.md` is operational, not advisory:
+
+- **Session start / before any branch or merge op** — run
+  `bun ../primebrick-v3-sdk/tools/gitflow.ts audit` in the repo you are
+  about to touch. An orphan (merged-but-unclosed work branch) or an
+  unexpected open work branch is a **STOP**: report and ask the user.
+- **Every commit is pushed immediately** — origin is always aligned.
+- **Closing is only via `gitflow finish`** — raw merge/delete commands
+  on feature/release/hotfix branches are forbidden.
